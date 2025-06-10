@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+  </head>
+ <body>
+
+ <script >
+
+    function dodajBlur() {
+        const obraz = document.getElementById("obrazek");
+        const obraz2 = document.getElementById("obrazek2");
+        obraz.classList.add("blur");
+        obraz2.classList.add("blur");
+     }
+
+    function usunEfekty() {
+        const obraz = document.getElementById("obrazek");
+        const obraz2 = document.getElementById("obrazek2"); 
+        obraz.classList.remove("blur", "szary");
+        obraz2.classList.remove("blur", "szary");
+    }
+
+    function zamienNaSzary() {
+     const obraz = document.getElementById("obrazek");
+     const obraz2 = document.getElementById("obrazek2");
+     obraz.classList.replace("blur", "szary");
+     obraz2.classList.replace("blur", "szary");
+    }   
+</script>
+
+
+    <img id="obrazek" src="kot.jpg" alt="obraz" class="">
+    <img id="obrazek2" src="soul of cinder.jpg" alt="obraz2" class="">
+    <div>
+         <button onclick="dodajBlur()">Dodaj blur</button>
+         <button onclick="usunEfekty()">Usuń efekty</button>
+         <button onclick="zamienNaSzary()">Zamień na grayscale</button>
+    </div>
+
+  
+
+    </body>
+ </html>
